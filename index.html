@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Journey</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="//unpkg.com/globe.gl"></script>
+    
 </head>
 <body>
-    <h1>Career Journey</h1>
-    <p>Interactive globe CV coming soon.</p>
+
+    <div id="login">
+        <h2>Enter Access Code</h2>
+        <input id="accessCode">
+        <button id="enterBtn">Enter</button>
+    </div>
+
+    <div id="content" style="display:none">
+        <h1>Career Journey</h1>
+        <p>Interactive globe CV coming soon.</p>
+
+        <div id="globeViz"></div>
+        <script src="js/globe.js"></script>
+
+        <div id="chapter"></div>
+
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <script src="js/access.js"></script>
+    <script src="js/timeline.js"></script>
+
 </body>
 </html>
